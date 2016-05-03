@@ -17,8 +17,6 @@ namespace DispatcherSample.UnitTests
         public void DispatcherBasicTest()
         {
 
-
-
             using (Dispatcher dispatcher = new Dispatcher())
             {
                 //Assert.IsTrue(dispatcher.MaxJob > 2, "The amount of reported processors is");
@@ -39,7 +37,6 @@ namespace DispatcherSample.UnitTests
                                 Data = i.ToString()
                             });
                             break;
-
                     }
                 }
                 //Workaround
@@ -59,7 +56,6 @@ namespace DispatcherSample.UnitTests
                 TestContext.WriteLine("Amount of DataCommand: {0}", results.OfType<DataCommand>().Count());
 
                 TestContext.WriteLine("Amount of EmptyCommand: {0}", results.OfType<EmptyCommand>().Count());
-
 
             }
 
